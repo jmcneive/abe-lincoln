@@ -1,0 +1,40 @@
+body {
+  background: #444;
+}
+.aniWrap {
+  margin: 40px auto;
+  display: block;
+  width: 28px;
+  @media #{$small-and-down} {
+    display: none;
+  }
+  @media #{$medium-and-down} {
+    position: relative;
+    top: 20vh;
+  }
+}
+
+.mouse {
+  width: 28px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+
+.scroller {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: black;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  -webkit-animation: scrolls 1.3s ease-out infinite ; /* Chrome, Safari, Opera */
+}
+
+
+@-webkit-keyframes scrolls {
+    0%   {top: 10px; opacity: 1; height: 4px}
+    95% {top: 18px; opacity: 0; height: 10px}
+    100% {top: 8px; opacity: 1; height: 4px}
+}

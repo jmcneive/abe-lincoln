@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+}
+.alfie {
+    background-color: dodgerblue;
+}
+.bronco {
+    background-color: brown;
+}
+.chuck {
+    background-color: pink;
+}
+.dennis {
+    background-color: gold;
+}
+.bubba {
+  height: 30em;
+}
+
+/* ---------- Headings */
+.wrapper__hero {
+    h1.header__marquee {
+    font-size: 30vmin;
+    // width: 60vw;
+    color: gold;
+    line-height: 1;
+    text-align: center;
+    }
+}
+h1.home__greeting, h2.home__greeting--sub {
+    text-align: center;
+}
+
+/* -------------- Copy */
+.home__greeting--copy {
+    padding: 0 15%;
+    text-align: center;
+}
+
+/* ------------------------ Hero panel */
+.wrapper__hero {
+    height: 100vh;
+}
+
+h1.home__greeting, h2.home__greeting--sub {
+    text-align: center;
+}
+
+.title {
+  h1, h2, p {
+    padding: 0;
+  }
+  h1 {
+    font-size: 8vw;
+    @media #{$medium-and-up} {
+      font-size: 6vw;
+    }
+  }
+  h2 {
+    font-size: 5vw;
+    @media #{$medium-and-up} {
+      font-size: 3vw;
+    }
+  }
+  p {
+    font-size: 4vw;
+    @media #{$medium-and-up} {
+      font-size: 2vw;
+    }
+  }
+}

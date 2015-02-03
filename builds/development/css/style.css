@@ -7381,3 +7381,204 @@ ul.side-nav.fixed {
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+
+/* Main color theme */
+/* ---- CSS color names */
+/* Color palettes */
+/*----------- Random colors */
+/* Current color theme */
+/**
+ * Function defining the difference between 2 colors
+ *
+ * @param {Color} $a - first color
+ * @param {Color} $b - second color
+ *
+ * @return {Map}  The color operations to do in order to find $b from $a where keys are the color functions to apply and values are the values to pass to these functions
+ */
+/**
+ * Compute the diff for each color from the initial palette
+ *
+ * @param {Map} $palette - palette
+ *
+ * @requires {function} color-diff
+ * 
+ * @return {List} list of diffs
+ */
+/**
+ * Initial palette used to define the diff between the base color and each color from the palette. There can be as many colors as one wants.
+ * 
+ * @Link https://ton.twitter.com/i/ton/data/dm/487926326314418176/487926326322823168/8M2k8xOp.png Initial color palette
+ *
+ * @type Map
+ */
+/**
+ * Palette diffs
+ * Same length as colors key from map-palette
+ *
+ * @type List
+ */
+/**
+ * Apply differences returned from `color-diff` function to a color in order to retrieve the second color
+ *
+ * @param {Color} $color - color to transform
+ * @param {Map} $diff - diff map
+ * 
+ * @return {Color} transformed color
+ */
+/**
+ * Create a palette from a base color
+ *
+ * @param {Color} $base-color - base color for the palette
+ *
+ * @requires {function} palette-diff
+ * @requires {function} apply-diff
+ * @requires {variable} $base-palette
+ *
+ * @return {List} list of colors
+ */
+/**
+ * Create a list of colors from the base color
+ * then turn in into a map with explicit keys
+ *
+ * @param {Color} $base-color - base color for the palette
+ *
+ * @requires {function} create-palette
+ *
+ * @return {Map}
+ */
+/**
+ * Create and apply a palette
+ * 
+ * @param {Color} $base-color - base color
+ * 
+ * @requires {function} create-palette
+ */
+.test-1 {
+  background: whitesmoke;
+  background: linear-gradient(to right, #ffffff, #ffffff 14.28571%, #ffffff 14.28571%, #ffffff 28.57143%, #fcfefe 28.57143%, #fcfefe 42.85714%, #f5f5f5 42.85714%, #f5f5f5 57.14286%, #b1e4e4 57.14286%, #b1e4e4 71.42857%, #73cece 71.42857%, #73cece 85.71429%, #68c9c9 85.71429%, #68c9c9 100%); }
+
+.test-2 {
+  background: cornflowerblue;
+  background: linear-gradient(to right, #e1e0d7, #e1e0d7 14.28571%, #c7b6c5 14.28571%, #c7b6c5 28.57143%, #a2b0bf 28.57143%, #a2b0bf 42.85714%, #6495ed 42.85714%, #6495ed 57.14286%, #5672a6 57.14286%, #5672a6 71.42857%, #3a4d6e 71.42857%, #3a4d6e 85.71429%, #344564 85.71429%, #344564 100%); }
+
+.test-3 {
+  background: #485773;
+  background: linear-gradient(to right, #636cbf, #636cbf 14.28571%, #c423ac 14.28571%, #c423ac 28.57143%, #8c683f 28.57143%, #8c683f 42.85714%, #485773 42.85714%, #485773 57.14286%, #403726 57.14286%, #403726 71.42857%, #0b0a07 71.42857%, #0b0a07 85.71429%, #010101 85.71429%, #010101 100%); }
+
+.test-4 {
+  background: powderblue;
+  background: linear-gradient(to right, #feffff, #feffff 14.28571%, #e4d5ed 14.28571%, #e4d5ed 28.57143%, #d7cfcf 28.57143%, #d7cfcf 42.85714%, #b0e0e6 42.85714%, #b0e0e6 57.14286%, #9da3a4 57.14286%, #9da3a4 71.42857%, #727a7b 71.42857%, #727a7b 85.71429%, #6a7273 85.71429%, #6a7273 100%); }
+
+.test-5 {
+  background: lightskyblue;
+  background: linear-gradient(to right, #f7f5f1, #f7f5f1 14.28571%, #d7d6d7 14.28571%, #d7d6d7 28.57143%, #b7d1da 28.57143%, #b7d1da 42.85714%, #87cefa 42.85714%, #87cefa 57.14286%, #68a1c4 57.14286%, #68a1c4 71.42857%, #3c779c 71.42857%, #3c779c 85.71429%, #386f90 85.71429%, #386f90 100%); }
+
+.test {
+  margin: 1em 0;
+  height: 6em; }
+
+body {
+  background: #444; }
+
+.aniWrap {
+  margin: 40px auto;
+  display: block;
+  width: 28px; }
+  @media only screen and (max-width : 600px) {
+    .aniWrap {
+      display: none; } }
+  @media only screen and (max-width : 992px) {
+    .aniWrap {
+      position: relative;
+      top: 20vh; } }
+
+.mouse {
+  width: 28px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 14px; }
+
+.scroller {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background: black;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  -webkit-animation: scrolls 1.3s ease-out infinite;
+  /* Chrome, Safari, Opera */ }
+
+@-webkit-keyframes scrolls {
+  0% {
+    top: 10px;
+    opacity: 1;
+    height: 4px; }
+
+  95% {
+    top: 18px;
+    opacity: 0;
+    height: 10px; }
+
+  100% {
+    top: 8px;
+    opacity: 1;
+    height: 4px; } }
+
+body {
+  background-color: white; }
+
+.alfie {
+  background-color: dodgerblue; }
+
+.bronco {
+  background-color: brown; }
+
+.chuck {
+  background-color: pink; }
+
+.dennis {
+  background-color: gold; }
+
+.bubba {
+  height: 30em; }
+
+/* ---------- Headings */
+.wrapper__hero h1.header__marquee {
+  font-size: 30vmin;
+  color: gold;
+  line-height: 1;
+  text-align: center; }
+
+h1.home__greeting, h2.home__greeting--sub {
+  text-align: center; }
+
+/* -------------- Copy */
+.home__greeting--copy {
+  padding: 0 15%;
+  text-align: center; }
+
+/* ------------------------ Hero panel */
+.wrapper__hero {
+  height: 100vh; }
+
+h1.home__greeting, h2.home__greeting--sub {
+  text-align: center; }
+
+.title h1, .title h2, .title p {
+  padding: 0; }
+.title h1 {
+  font-size: 8vw; }
+  @media only screen and (min-width : 601px) {
+    .title h1 {
+      font-size: 6vw; } }
+.title h2 {
+  font-size: 5vw; }
+  @media only screen and (min-width : 601px) {
+    .title h2 {
+      font-size: 3vw; } }
+.title p {
+  font-size: 4vw; }
+  @media only screen and (min-width : 601px) {
+    .title p {
+      font-size: 2vw; } }

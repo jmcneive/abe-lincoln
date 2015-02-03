@@ -1,0 +1,32 @@
+/* Main color theme */
+/* ---- CSS color names */
+
+/* Color palettes */
+$clr-mediumseagreen: #3CB371;
+$clr-aquamarine: #7FFFD4;
+$clr-darkgreen: #006400;
+$clr-darkmagenta: #8B008B;
+$clr-darkviolet: #9400D3;
+
+$clr-orchid: #DA70D6;
+$clr-orangered: #FF4500;
+$clr-yellow: #FFFF00;
+$clr-limegreen: #32CD32;
+$clr-saddlebrown: #8B4513;
+
+$clr-steelblue: #485773;
+$clr-cornflowerblue: #6495ED;
+$clr-lightskyblue: #87CEFA;
+$clr-powderblue: #B0E0E6;
+$clr-whitesmoke: #F5F5F5;
+
+
+/*----------- Random colors */
+$clr-gold: gold;
+
+/* Current color theme */
+$palette-primary: $clr-steelblue;
+$palette-secondary: $clr-cornflowerblue;
+$palette-tertiary: $clr-whitesmoke;
+$palette-alert: $clr-powderblue;
+$palette-button: $clr-lightskyblue;
